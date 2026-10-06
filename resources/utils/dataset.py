@@ -31,7 +31,7 @@ class ISICDataset(Dataset):
         return image, label
 
 ####----------------------------- Transform ---------------
-def get_transform(IMG_SIZE = (600, 450)): 
+def get_transform(IMG_SIZE = (450, 600)): 
     train_transform = transforms.Compose([
         transforms.Resize(IMG_SIZE),
         transforms.RandomHorizontalFlip(p=0.5),

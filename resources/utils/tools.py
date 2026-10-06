@@ -9,7 +9,7 @@ from captum.attr import visualization as viz
 from captum.attr import LayerGradCam, GuidedGradCam
 
 ####----------------------------- get_img ---------------
-def get_ts_img(root, fname, img_path, batch=True, IMG_SIZE = (600, 450)):
+def get_ts_img(root, fname, img_path, batch=True, IMG_SIZE = (450, 600)):
     img_path = os.path.join(root,  img_path, fname + '.jpg')
     image = Image.open(img_path).convert('RGB')
 
